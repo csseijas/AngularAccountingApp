@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CountabilityMenuComponent } from './countability-menu/countability-menu.component';
+import { AccountingMenuComponent } from './lib/accounting-header/accounting-header.component';
+import { AccountingFooterComponent } from './lib/accounting-footer/accounting-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountabilityMenuComponent
+    AccountingMenuComponent,
+    AccountingFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { CountabilityMenuComponent } from './countability-menu/countability-menu
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

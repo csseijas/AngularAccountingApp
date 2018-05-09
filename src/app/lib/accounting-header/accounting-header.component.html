@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>
+    My Accounting APP
+  </mat-card-title>
+  <mat-card-content>
+    <button md-raised-button color="primary" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>money</mat-icon>
+        <span>Ingresos</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>local_grocery_store</mat-icon>
+        <span>Gastos</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>euro_symbol</mat-icon>
+        <span>Beneficios/Pérdidas</span>
+      </button>
+    </mat-menu>
+  </mat-card-content>
+</mat-card>

@@ -4,13 +4,13 @@
         "directive-selector": [
             true,
             "attribute",
-            "countability",
+            "accounting",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
-            "countability",
+            "accouting",
             "kebab-case"
         ]
     }
