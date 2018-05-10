@@ -6,7 +6,7 @@ import { MatMenuTrigger } from '@angular/material';
   templateUrl: './accounting-header.component.html',
   styleUrls: ['./accounting-header.component.scss']
 })
-export class AccountingMenuComponent implements OnInit {
+export class AccountingHeaderComponent implements OnInit {
 
   constructor() { }
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;

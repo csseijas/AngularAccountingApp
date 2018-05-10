@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\lib",
+    "\\src\\app\\lib\\accounting-footer",
+    "\\src\\app\\lib\\accounting-header",
+    "\\src\\app\\lib\\not-found-component",
+    "\\src\\app\\views",
+    "\\src\\app\\views\\home",
+    "\\src\\assets",
+    "\\src\\assets\\images"
+  ],
+  "SelectedNode": "\\src\\app\\views\\home",
+  "PreviewInSolutionExplorer": false
+}
