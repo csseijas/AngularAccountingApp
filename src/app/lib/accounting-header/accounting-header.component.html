@@ -7,15 +7,19 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>money</mat-icon>
-        <abbr routerLink="/incomes">Ingresos</abbr>
+      <button routerLink="/" mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <abbr>Home</abbr>
       </button>
-      <button mat-menu-item>
+      <button routerLink="/incomes" mat-menu-item>
+        <mat-icon>money</mat-icon>
+        <abbr>Ingresos</abbr>
+      </button>
+      <button routerLink="/expenses" mat-menu-item>
         <mat-icon>local_grocery_store</mat-icon>
         <span>Gastos</span>
       </button>
-      <button mat-menu-item>
+      <button routerLink="/benefits" mat-menu-item>
         <mat-icon>euro_symbol</mat-icon>
         <span>Beneficios/Pérdidas</span>
       </button>

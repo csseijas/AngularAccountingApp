@@ -7,21 +7,7 @@ const routes: Routes = [
   {
     path: "",
     component: MainIncomesComponent
-  },
-  /*
-  {
-    path: "income",
-    loadChildren: "./views/operations/income.module#IncomeModule"
-  },
-  {
-    path: "expenses",
-    loadChildren: "./views/operations/expenses.module#ExpensesModule"
-  },
-  {
-    path: "benefits",
-    loadChildren: "./views/operations/benefits.module#BenefitsModule"
   }
-  */
 ];
 
 @NgModule({

@@ -12,15 +12,14 @@ const routes: Routes = [
     path: "incomes",
     loadChildren: "./views/incomes/incomes.module#IncomesModule"
   },
-  /*{
+  {
     path: "expenses",
-    loadChildren: "./views/operations/expenses.module#ExpensesModule"
+    loadChildren: "./views/expenses/expenses.module#ExpensesModule"
   },
   {
     path: "benefits",
-    loadChildren: "./views/operations/benefits.module#BenefitsModule"
-  }
-  */
+    loadChildren: "./views/benefits/benefits.module#BenefitsModule"
+  },
   {
     path: "404",
     component: NotFoundComponent
