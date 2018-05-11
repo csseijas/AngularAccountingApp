@@ -4,14 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\lib",
-    "\\src\\app\\lib\\accounting-footer",
     "\\src\\app\\lib\\accounting-header",
-    "\\src\\app\\lib\\not-found-component",
     "\\src\\app\\views",
-    "\\src\\app\\views\\home",
-    "\\src\\assets",
-    "\\src\\assets\\images"
+    "\\src\\app\\views\\benefits",
+    "\\src\\app\\views\\expenses",
+    "\\src\\app\\views\\expenses\\main-expenses",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\views\\home",
+  "SelectedNode": "\\src\\app\\views\\benefits\\benefits.module.ts",
   "PreviewInSolutionExplorer": false
 }

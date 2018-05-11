@@ -1,9 +1,12 @@
-<header>
+<div fxLayout="column">
+<header fxFlexFill>
   <accounting-header id="header"></accounting-header>
 </header>
-<main>
+<main fxFlexOffset="1%" fxFlexFill>
   <router-outlet></router-outlet>
 </main>
-<footer>
+<footer fxFlexAlign="center"  fxFlexOffset="1%"> 
   <accounting-footer></accounting-footer>
 </footer>
+
+</div>

@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule } from '@angular/material';
 import { BenefitsRoutingModule } from './benefits-routing.module';
 import { MainBenefitsComponent } from './main-benefits/main-benefits.component';
+import {AccountingDonutChartComponent} from '../../lib/accounting-donut-chart/accounting-donut-chart.component';
 
 
 @NgModule({
   declarations: [
-    MainBenefitsComponent
+    MainBenefitsComponent,
+    AccountingDonutChartComponent
   ],
   imports: [
     BenefitsRoutingModule,

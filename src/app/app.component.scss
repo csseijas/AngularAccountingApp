@@ -1,20 +1,19 @@
 header {
   min-height:18%;
+  width:100%;
 }
 
 main {
-  position: relative;
   margin-top:1%;
-  height:650px;
+  min-height:550px;
+  height:550px;
   max-height: 61%;
-  width: 100%;
+  width:100%;
 }
 
 footer {
   margin-top: 1%;
   min-height: 17%;
   max-height: 17%;
-  width: 40%;
-  position: relative;
-  left: 30%;
+  margin-bottom:3%;
 }
