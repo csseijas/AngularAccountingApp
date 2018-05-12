@@ -1,20 +1,21 @@
-<div fxLayout="column">
-    <div id="firstRow" fxFlexFill>
-      <article>
-        <accounting-common-btns-template></accounting-common-btns-template>
+<div fxLayout="column" fxLayoutGap="5%">
+  <div class="firstRow" fxLayout="row">
+    <article></article>
+    <article>
+      <accounting-common-btns-template></accounting-common-btns-template>
+    </article>
+  </div>
+  <div class="secondRow" fxLayout="row" flLayoutAlign="start">
+    <article>
+      <accounting-common-grid-view></accounting-common-grid-view>
+    </article>
+    <article>
+        <accounting-common-form></accounting-common-form>
       </article>
     </div>
-    <div id="secondRow" fxFlexFill>
-        <article>
-          <accounting-common-form></accounting-common-form>
-        </article>
-        <article>
-            <accounting-common-grid-view></accounting-common-grid-view>
-          </article>
-      </div>
-    <div id="thirdRow" fxFlexAlign="center" fxFlexFill>
-      <article>
-        <accounting-donut-chart></accounting-donut-chart>
-      </article>
-    <div>
-  </div>
+  <div class="thirdRow" fxLayout="column" flLayoutAlign="center">
+    <article>
+      <accounting-donut-chart></accounting-donut-chart>
+    </article>
+  <div>
+</div>

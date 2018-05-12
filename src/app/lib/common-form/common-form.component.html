@@ -1,17 +1,18 @@
-<form id="accountingForm" [formGroup]= "accountingForm">
-    <mat-label>Nombre Identificativo</mat-label>
+<form class="accountingForm" [formGroup]= "accountingForm">
+      <mat-label>Nombre Identificativo</mat-label>
+      <br/>
+    <mat-form-field class="matInputSizeStyle">
+      <input matInput formControlName="name" type="string" placeholder="Nombre identificativo">
+      <mat-error *ngIf="accountingForm.controls['name'].invalid">"Nombre identificativo inválido"</mat-error>
+    </mat-form-field>
     <br/>
-  <mat-form-field class="inputFormStyle">
-    <input matInput formControlName="name" type="string" matSize="100" placeholder="Nombre identificativo">
-    <mat-error *ngIf="accountingForm.controls['name'].invalid">"Nombre identificativo inválido"</mat-error>
-  </mat-form-field>
-  <br/>
-  <mat-label>Cantidad</mat-label>
-  <br/>
-  <mat-form-field  class="inputFormStyle">
-    <input matInput formControlName="amount" type="string" matSize="100 "placeholder="Cantidad">
-    <mat-error  *ngIf="accountingForm.controls['amount'].invalid">"La cantidad es inválida"</mat-error>
-  </mat-form-field>
-  <br/>
-  <button mat-button>Submit</button>
+    <mat-label>Cantidad</mat-label>
+    <br/>
+    <mat-form-field class="matInputSizeStyle">
+      <input fxFlexFill matInput formControlName="amount" type="string" placeholder="Cantidad">
+      <mat-error  *ngIf="accountingForm.controls['amount'].invalid">"La cantidad es inválida"</mat-error>
+    </mat-form-field>
+    <br/>
+    <button mat-button>Submit</button>
 </form>
+

@@ -3,6 +3,7 @@ import { IncomesRoutingModule } from './incomes-routing.module';
 import { MainIncomesComponent } from './main-incomes/main-incomes.component';
 import {ViewsModule} from '../views.module';
 import {ViewsCommonsModule} from '../views-commons.module';
+import {AllViewsCommonsModule} from '../all-views-commons.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {ViewsCommonsModule} from '../views-commons.module';
   imports: [
     IncomesRoutingModule,
     ViewsModule,
-    ViewsCommonsModule
+    ViewsCommonsModule,
+    AllViewsCommonsModule
   ],
   providers: [],
   bootstrap: [MainIncomesComponent]

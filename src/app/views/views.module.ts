@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule, MatIconModule, MatRadioModule } from '@angular/material';
 import { MatDividerModule, MatFormFieldModule, MatTableModule, MatInputModule, MatSortModule, MatPaginatorModule } from '@angular/material';
 
+
 @NgModule({
   declarations: [
     CommonBtnsTemplateComponent,
@@ -31,7 +32,7 @@ import { MatDividerModule, MatFormFieldModule, MatTableModule, MatInputModule, M
     MatIconModule,
     MatSortModule,
     MatPaginatorModule,
-    MatRadioModule,
+    MatRadioModule
   ],
   providers: [],
   exports: [

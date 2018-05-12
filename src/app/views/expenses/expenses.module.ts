@@ -3,7 +3,7 @@ import { ExpensesRoutingModule } from './expenses-routing.module';
 import { MainExpensesComponent } from './main-expenses/main-expenses.component';
 import {ViewsModule} from '../views.module';
 import {ViewsCommonsModule} from '../views-commons.module';
-
+import {AllViewsCommonsModule} from '../all-views-commons.module';
 @NgModule({
   declarations: [
     MainExpensesComponent,
@@ -11,7 +11,8 @@ import {ViewsCommonsModule} from '../views-commons.module';
   imports: [
     ExpensesRoutingModule,
     ViewsModule,
-    ViewsCommonsModule
+    ViewsCommonsModule,
+    AllViewsCommonsModule
   ],
   providers: [],
   bootstrap: [MainExpensesComponent]

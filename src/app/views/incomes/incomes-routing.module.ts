@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { MainIncomesComponent } from './main-incomes/main-incomes.component';
 
 
+
 const routes: Routes = [
   {
     path: "",
