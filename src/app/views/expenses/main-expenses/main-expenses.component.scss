@@ -1,0 +1,29 @@
+
+#firstRow{
+  position:relative;
+  margin-right:3%;
+  float:right;
+}
+
+#secondRow{
+  margin-bottom:10%;
+  margin-right:7%;
+  margin-left:7%;
+  clear:right;
+}
+#secondRow article{
+  margin-right:10%;
+  float:left;
+}
+#secondRow article:first-child{
+ width:30%;
+}
+#secondRow article:nth-child(2) {
+ width:46%;
+}
+
+#thirdRow{
+  top:10%;
+  clear:left;
+  position:relative;
+}

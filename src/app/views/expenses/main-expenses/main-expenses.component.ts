@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'accounting-main-expenses',
   templateUrl: './main-expenses.component.html',

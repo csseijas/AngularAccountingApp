@@ -1,20 +1,17 @@
 import { NgModule } from '@angular/core';
-import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatDividerModule } from '@angular/material';
 import { ExpensesRoutingModule } from './expenses-routing.module';
 import { MainExpensesComponent } from './main-expenses/main-expenses.component';
-
+import {ViewsModule} from '../views.module';
+import {ViewsCommonsModule} from '../views-commons.module';
 
 @NgModule({
   declarations: [
-    MainExpensesComponent
+    MainExpensesComponent,
   ],
   imports: [
     ExpensesRoutingModule,
-    MatMenuModule,
-    MatButtonModule,
-    MatIconModule,
-    MatCardModule,
-    MatDividerModule
+    ViewsModule,
+    ViewsCommonsModule
   ],
   providers: [],
   bootstrap: [MainExpensesComponent]
