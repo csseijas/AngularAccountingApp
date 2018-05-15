@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { MainExpensesComponent } from './main-expenses/main-expenses.component';
+import {FormViewComponent} from '../form-view/form-view.component';
+
 
 
 const routes: Routes = [
@@ -8,20 +10,18 @@ const routes: Routes = [
     path: "",
     component: MainExpensesComponent
   },
-  /*
   {
-    path: "income",
-    loadChildren: "./views/operations/income.module#IncomeModule"
+    path: "form/create",
+    component: FormViewComponent
   },
   {
-    path: "expenses",
-    loadChildren: "./views/operations/expenses.module#ExpensesModule"
+    path: "form/edit/:id",
+    component: FormViewComponent
   },
   {
-    path: "benefits",
-    loadChildren: "./views/operations/benefits.module#BenefitsModule"
+    path: "form/delete/:id",
+    component: FormViewComponent
   }
-  */
 ];
 
 @NgModule({

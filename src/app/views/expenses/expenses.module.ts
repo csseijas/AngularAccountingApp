@@ -4,6 +4,7 @@ import { MainExpensesComponent } from './main-expenses/main-expenses.component';
 import {ViewsModule} from '../views.module';
 import {ViewsCommonsModule} from '../views-commons.module';
 import {AllViewsCommonsModule} from '../all-views-commons.module';
+
 @NgModule({
   declarations: [
     MainExpensesComponent,

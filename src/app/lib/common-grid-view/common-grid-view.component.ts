@@ -9,7 +9,7 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 })
 export class CommonGridViewComponent implements OnInit {
 
-  displayedColumns = ['id', 'name', 'amount'];
+  displayedColumns = ['id', 'name', 'amount', 'create', 'edit', 'delete'];
   accountingDataTable: MatTableDataSource<AccountingData>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -19,8 +19,7 @@ export class CommonGridViewComponent implements OnInit {
     const accountingDataArray: AccountingData [] = [
       { 'id': 0, 'name': 'fasferhgerhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh', 'amount': 241},
       { 'id': 1, 'name': 'Reaehrhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdy', 'amount': 241 },
-      { 'id': 2, 'name': 'Stherrjtyjfewgwerghehrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrt' +
-      'vgbesdrggggggggggggggg', 'amount': 24893 }];
+      { 'id': 2, 'name': 'Stherrjtyjfewgwerghehrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrt', 'amount': 24893 }];
     this.accountingDataTable = new MatTableDataSource(accountingDataArray);
   }
 

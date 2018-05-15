@@ -1,22 +1,25 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonBtnsTemplateComponent } from '../lib/common-btns-template/common-btns-template.component';
 import { CommonGridViewComponent } from '../lib/common-grid-view/common-grid-view.component';
-import { CommonFormComponent } from '../lib/common-form/common-form.component';
 import { AccountingDonutChartComponent} from '../lib/accounting-donut-chart/accounting-donut-chart.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule, MatIconModule, MatRadioModule } from '@angular/material';
 import { MatDividerModule, MatFormFieldModule, MatTableModule, MatInputModule, MatSortModule, MatPaginatorModule } from '@angular/material';
-
+import { CommonFormComponent} from '../lib/common-form/common-form.component';
+import {FormViewComponent} from './form-view/form-view.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     CommonBtnsTemplateComponent,
-    CommonFormComponent,
-    CommonGridViewComponent
+    CommonGridViewComponent,
+    FormViewComponent,
+    CommonFormComponent
   ],
   imports: [
     CommonModule,
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
@@ -32,16 +35,18 @@ import { MatDividerModule, MatFormFieldModule, MatTableModule, MatInputModule, M
     MatIconModule,
     MatSortModule,
     MatPaginatorModule,
-    MatRadioModule
+    MatRadioModule,
   ],
   providers: [],
   exports: [
     CommonBtnsTemplateComponent,
-    CommonFormComponent,
     CommonGridViewComponent,
     CommonModule,
+    FormViewComponent,
+    RouterModule,
+    CommonFormComponent,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: []

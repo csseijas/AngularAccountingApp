@@ -6,21 +6,14 @@
  .firstRow article:first-child{
   width:80%
  }
- .firstRow article:nth-child(2) {
-  width:26%;
- }
 
-.secondRow {
-  width:100%;
-  margin-left:5%;
- }
+
+
 
 .secondRow article:first-child{
-  width:50%;
+  width:100%;
   margin-right: 5%;
- }
- .secondRow article:nth-child(2) {
-  width:40%;
+  margin-left:5%;
  }
 
  .thirdRow {
