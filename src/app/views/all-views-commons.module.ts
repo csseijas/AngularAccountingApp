@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-
 @NgModule({
   declarations: [
   ],
   imports: [
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   providers: [],
   exports: [
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   bootstrap: []
 })

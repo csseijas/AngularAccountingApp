@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { ExpensesRoutingModule } from './expenses-routing.module';
 import { MainExpensesComponent } from './main-expenses/main-expenses.component';
-import {ViewsModule} from '../views.module';
-import {ViewsCommonsModule} from '../views-commons.module';
+import {FormViewSharedModule} from '../form-view-shared.module';
 import {AllViewsCommonsModule} from '../all-views-commons.module';
+import {DonutChartSharedModule} from '../donut-chart-shared.module';
 
 @NgModule({
   declarations: [
@@ -11,9 +11,9 @@ import {AllViewsCommonsModule} from '../all-views-commons.module';
   ],
   imports: [
     ExpensesRoutingModule,
-    ViewsModule,
-    ViewsCommonsModule,
-    AllViewsCommonsModule
+    DonutChartSharedModule,
+    AllViewsCommonsModule,
+    FormViewSharedModule
   ],
   providers: [],
   bootstrap: [MainExpensesComponent]

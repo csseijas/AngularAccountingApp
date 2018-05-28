@@ -9,7 +9,7 @@ import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
 })
 export class CommonGridViewComponent implements OnInit {
 
-  displayedColumns = ['id', 'name', 'amount', 'create', 'edit', 'delete'];
+  displayedColumns = ['id', 'name', 'amount', 'edit', 'delete'];
   accountingDataTable: MatTableDataSource<AccountingData>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;

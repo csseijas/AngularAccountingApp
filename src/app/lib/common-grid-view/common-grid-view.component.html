@@ -20,10 +20,6 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Cantidad</th>
       <td mat-cell *matCellDef="let row"> {{row.amount}} </td>
     </ng-container>
-    <ng-container matColumnDef="create">
-      <th mat-header-cell *matHeaderCellDef>Crear</th>
-      <td mat-cell *matCellDef="let row"><a [routerLink] ="['form', 'create']"><mat-icon>plus_one</mat-icon></a></td>
-    </ng-container>
     <ng-container matColumnDef="edit">
       <th mat-header-cell *matHeaderCellDef>Editar</th>
       <td mat-cell *matCellDef="let row"><a [routerLink] = "['form','edit', row.id]"><mat-icon>edit</mat-icon></a></td>
@@ -36,8 +32,9 @@
 
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
-
-  <mat-paginator  [pageSize]="10"
+  <br/>
+  <a [routerLink] ="['form', 'create']"><mat-icon>plus_one</mat-icon></a>
+  <mat-paginator [pageSize]="10"
   [pageSizeOptions]="[10, 25, 50]"></mat-paginator>
 
   </div>
